@@ -1,0 +1,26 @@
+import java.util.HashSet;
+//import java.util.Set;
+public class FirstDuplicate {
+    public static void main(String[] args){
+        int[] a = {4,6,3,8,6,9,2,12,19};
+        int temp =-1;
+        int i;
+        HashSet<Integer> hs = new HashSet<>();
+        for(i=a.length-1;i>=0;i--){
+            if(hs.contains(a[i])){
+                temp = i;
+            }
+            else{
+                hs.add(a[i]);
+            }
+
+        }
+        if(temp!=-1){
+            System.out.println("First Duplicate element is: "+a[temp]);
+        }
+        else{
+            System.out.println("No Duplicate element");
+        }
+    }
+    
+}
