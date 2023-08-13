@@ -1,3 +1,4 @@
+// Below is the Java Code to find Duplicate element in array
 import java.util.HashSet;
 //import java.util.Set;
 public class FirstDuplicate {
